@@ -17,7 +17,7 @@ MovieDB is a website for browsing through a wide variety of movies. Current feat
 
 ### Running the frontend locally
 
-The following commands can be run in the `T26-Project-2/frontend` directory:
+The following commands can be run in the `MovieDB/frontend` directory:
 
 - `npm install` to install dependencies.
 - `npm run dev` to start the development server
@@ -32,7 +32,7 @@ The following commands can be run in the `T26-Project-2/frontend` directory:
 
 ### Restarting the frontend on the VM
 
-Navigate to the `~/T26-Project-2/frontend` directory
+Navigate to the `~/MovieDB/frontend` directory
 
 - `npm ci` to install dependencies (and stop on mismatches between the `package[-lock].json` files)
 - `npm run build` to build the project
@@ -40,7 +40,7 @@ Navigate to the `~/T26-Project-2/frontend` directory
 
 ### Running the backend locally
 
-The following commands can be run in the `T26-Project-2/backend` directory:
+The following commands can be run in the `MovieDB/backend` directory:
 
 - `npm install` to install dependencies.
 - `npm run prettier` to check code formatting
@@ -54,7 +54,7 @@ The following commands can be run in the `T26-Project-2/backend` directory:
 
 ### Running the backend on the VM
 
-Navigate to the `~/T26-Project-2/backend` directory
+Navigate to the `~/MovieDB/backend` directory
 
 - `npm install pm2 -g` to install pm2 globally
 - `npm ci` to install dependencies (and stop on mismatches between the `package[-lock].json` files)
@@ -69,12 +69,12 @@ Navigate to the `~/T26-Project-2/backend` directory
 
 There is no need to fill a testing database manually, or even download MongoDB. The E2E tests (and the backend tests) use an in memory MongoDB server, which is automatically started, filled, reset and stopped when the tests are run. The following commands are the only commands needed to run the E2E tests.
 
-In `T26-Project-2/backend`:
+In `MovieDB/backend`:
 
 - `npm run build` to build the backend
 - `npm run e2e:server` to start the test server
 
-In `T26-Project-2/frontend`:
+In `MovieDB/frontend`:
 
 - `npm run dev` to start the development server
 - One of the following commands:
@@ -86,7 +86,7 @@ In `T26-Project-2/frontend`:
 #### NB: This is already done, so you don't need to do this
 
 ```bash
-cd ~/T26-Project-2
+cd ~/MovieDB
 
 # Download the dataset
 curl -L -o archive.zip https://www.kaggle.com/api/v1/datasets/download/asaniczka/tmdb-movies-dataset-2023-930k-movies

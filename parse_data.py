@@ -156,7 +156,7 @@ def load_movie_data_chunks(rows: int | None = None, chunksize: int = 1000):
 
 
 def fill_db(rows: int | None = None):
-    DB_NAME = "T26-Project-2"
+    DB_NAME = "MovieDB"
     MOVIES_COL_NAME = "movies"
     REVIEWS_COL_NAME = "reviews"
 
