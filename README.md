@@ -1,8 +1,17 @@
-# Documentation project 2 - Group 26
+# MovieDB
 
-Website: <http://it2810-26.idi.ntnu.no/project2/>
+MovieDB is a website for browsing through a wide variety of movies. Current features include:
 
-Repository: <https://git.ntnu.no/IT2810-H24/T26-Project-2>
+- A feed of movies
+- Detailed movie information pages
+- Search for movie titles
+- Sorting and filtering with various options
+- Changing users by updating your username
+- Adding reviews for movies
+- A feed of the latest reviews from all users
+- A list of your own reviews
+
+![Main page](https://i.imgur.com/1e2EkeQ.jpg)
 
 ## Usage
 
@@ -97,19 +106,6 @@ npm run build
 pm2 start dist/index.js
 ```
 
-## MovieDB
-
-MovieDB is a website for browsing through a wide variety of movies. Current features include:
-
-- A feed of movies
-- Detailed movie information pages
-- Search for movie titles
-- Sorting and filtering with various options
-- Changing users by updating your username
-- Adding reviews for movies
-- A feed of the latest reviews from all users
-- A list of your own reviews
-
 ## Choices
 
 ### Frontend
@@ -151,7 +147,6 @@ Our tests cover each resolver and utility function in isolation, ensuring the ba
 We have made end-to-end tests using `Cypress`, as it's known to work well for e2e testing of web applications. When running the end-to-end tests we use `mongodb-memory-server`, as with the API tests, for the same reasons mentioned earlier. For the tests we have sequences of actions with varying length and complexity that imitate real user behavior. We've tried to be thorough, covering edge cases we know can be sources to issues. As an example, we test that reviews are updated correctly in the cache by submitting/deleting a review, then visiting the Activity page and My Reviews page, before returning to the initial movie. For search, sorting and filtering, we've already tested the API responses in the backend tests. Therefore, we focused mainly on checking that requests had the correct variables and that the response data was rendered correctly. Still, we test that search, sorting, filtering and paging work well together through several different action sequences. Due to variations in loading time as a result of for example network congestion, there is a small possibility that tests can fail. However, as we use wait() to handle this problem, this is a rare occurrence. Still, it's worth a mention.
 
 **Note**: There are some warnings that appear when running the E2E tests. These come from code Cypress itself references, so we are not able to fix these issues ourselves.
-
 
 ### Accessibility
 
